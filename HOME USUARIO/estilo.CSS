@@ -1,0 +1,52 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+}
+
+.container{
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 50px;
+    font-style:inherit;
+}
+
+.container2{
+    background-color:darkgreen;
+    height: 50px;
+    padding: 10px;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap:400px;
+    color: wheat;
+    font-size: 30px;
+    align-items: flex-end;
+    
+}
+ li{
+    display: block;
+    align-items: center;
+ }
+
+ .menu svg{
+    display: flex;
+    width:80px;
+    height: 80px;
+ }
+
+ ul:hover{
+    color: green;
+    cursor: pointer;
+ }
