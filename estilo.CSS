@@ -1,52 +1,57 @@
 *{
+    margin:0px;
     padding: 0px;
-    margin: 0px;
     box-sizing: border-box;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Belanosima', sans-serif;
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px 0 20px;
+img{
+    width: 150px;
+    height: 150px;
 }
 
-.container{
-    font-size: x-large;
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    font-size: 50px;
-    font-style:inherit;
+.NombreN{
+    display:flex ;
+    text-align: right;
 }
 
-.container2{
-    background-color:darkgreen;
-    height: 50px;
-    padding: 10px;
+nav
+{
+      display: flex;
+      justify-content: space-between;
+      padding: 0 20px 0 20px;
 }
 
-ul{
-    display: flex;
-    list-style: none;
-    gap:400px;
-    color: wheat;
-    font-size: 30px;
-    align-items: flex-end;
-    
+ul
+{
+      display: flex;
+      list-style: none;
+      gap: 20px;
+      color: white;
+      font-size: 30px;
 }
- li{
-    display: block;
-    align-items: center;
- }
+header
+{
+      width: 100%;
+      height: 70px;
+      background-color:grey;
+      padding: 17px;
+}
 
- .menu svg{
-    display: flex;
-    width:80px;
-    height: 80px;
- }
+#menu svg
+{
+      width: 45px;
+      height: 35px;
+}
 
- ul:hover{
-    color: green;
-    cursor: pointer;
- }
+li
+{
+      height: 100%;
+      font-weight: 600;
+}
+li:hover
+{
+      color: greenyellow;
+      transition: all 1s;
+      cursor: pointer;
+}
