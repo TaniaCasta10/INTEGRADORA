@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Añadir Refacción</title>
+</head>
+<body>
+  <h1>Añadir Refacción</h1>
+  
+  <form id="add-form">
+    <div class="form-group">
+      <label for="refaccion">Refacción:</label>
+      <input type="text" id="refaccion">
+    </div>
+    <div class="form-group">
+      <label for="precio-compra">Precio Compra:</label>
+      <input type="text" id="precio-compra">
+    </div>
+    <div class="form-group">
+      <label for="precio-venta">Precio Venta:</label>
+      <input type="text" id="precio-venta">
+    </div>
+    <div class="form-group">
+      <label for="cantidad">Cantidad:</label>
+      <input type="text" id="cantidad">
+    </div>
+    <div class="form-group">
+      <label for="marca">Marca:</label>
+      <input type="text" id="marca">
+    </div>
+    <div class="form-group">
+      <label for="modelo">Modelo:</label>
+      <input type="text" id="modelo">
+    </div>
+    <div class="form-group">
+      <label for="anno">Año:</label>
+      <input type="text" id="anno">
+    </div>
+    <div class="form-group">
+      <label for="proveedor">Proveedor:</label>
+      <input type="text" id="proveedor">
+    </div>
+  
+    <div class="button-group">
+      <button type="submit">Guardar</button>
+      <button type="button" onclick="goBack()">Regresar</button>
+      <button type="button" onclick="cancelAdd()">Cancelar</button>
+    </div>
+  </form>
+  
+  <script>
+    document.getElementById("add-form").addEventListener("submit", function(event) {
+      event.preventDefault();
+      // Obtener los valores de los campos
+      var refaccion = document.getElementById("refaccion").value;
+      var precioCompra = document.getElementById("precio-compra").value;
+      var precioVenta = document.getElementById("precio-venta").value;
+      var cantidad = document.getElementById("cantidad").value;
+      var marca = document.getElementById("marca").value;
+      var modelo = document.getElementById("modelo").value;
+      var anno = document.getElementById("anno").value;
+      var proveedor = document.getElementById("proveedor").value;
+      
+      // Realizar lógica de guardado (enviar datos al servidor, agregar a una base de datos, etc.)
+      console.log("Refacción guardada:", refaccion);
+      console.log("Precio Compra:", precioCompra);
+      console.log("Precio Venta:", precioVenta);
+      console.log("Cantidad:", cantidad);
+      console.log("Marca:", marca);
+      console.log("Modelo:", modelo);
+      console.log("Año:", anno);
+      console.log("Proveedor:", proveedor);
+      
+      // Limpiar los campos del formulario
+      document.getElementById("refaccion").value = "";
+      document.getElementById("precio-compra").value = "";
+      document.getElementById("precio-venta").value = "";
+      document.getElementById("cantidad").value = "";
+      document.getElementById("marca").value = "";
+      document.getElementById("modelo").value = "";
+      document.getElementById("anno").value = "";
+      document.getElementById("proveedor").value = "";
+    });
+  
+    function goBack() {
+      // Lógica para regresar a la página anterior
+      console.log("Regresar");
+    }
+  
+    function cancelAdd() {
+      // Limpiar los campos del formulario
+      document.getElementById("refaccion").value = "";
+      document.getElementById("precio-compra").value = "";
+      document.getElementById("precio-venta").value = "";
+      document.getElementById("cantidad").value = "";
+      document.getElementById("marca").value = "";
+      document.getElementById("modelo").value = "";
+      document.getElementById("anno").value = "";
+      document.getElementById("proveedor").value = "";
+    }
+  </script>
+</body>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+  
+    h1 {
+      text-align: center;
+    }
+  
+    .form-group {
+      margin-top: 20px;
+    }
+  
+    .form-group label {
+      display: inline-block;
+      width: 150px;
+      font-weight: bold;
+    }
+  
+    .form-group input {
+      width: 250px;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  
+    .button-group {
+      text-align: right;
+      margin-top: 20px;
+    }
+  
+    .button-group button {
+      margin-left: 5px;
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  
+    .button-group button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</html>

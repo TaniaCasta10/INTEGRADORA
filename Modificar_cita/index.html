@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Citas</title>
+</head>
+<body>
+  <h1>Citas Generadas</h1>
+  
+  <div class="card" onclick="showForm(1)">
+    <h2>Cita 1</h2>
+    <p>Número de Cliente: 123456</p>
+    <p>Nombre: Silvia Rodriguez</p>
+    <p>Dirección: Calle Principal 123</p>
+    <p>Correo Electrónico: john.doe@example.com</p>
+    <p>Teléfono: 123-456-7890</p>
+    <p>Tipo: Física</p>
+    <p>Fecha de la Cita: 2023-06-29</p>
+    <p>Descripción de la Cita: Reparación de la copiadora</p>
+    <p>Número de la Máquina: 987654</p>
+    <p>Marca: XYZ</p>
+    <p>Modelo: ABC123</p>
+    <p>Año: 2020</p>
+    <p>Número de Serie: S123456789</p>
+    <p>Cliente: Jane Smith</p>
+    <div class="button-group">
+      <button onclick="editForm(1)">Modificar</button>
+      <button onclick="cancelForm(1)">Cancelar</button>
+      <button onclick="saveForm(1)">Guardar</button>
+    </div>
+  </div>
+  
+  <div class="form-group" id="form-1">
+    <h2>Editar Cita 1</h2>
+    <label for="n_cliente">Número de Cliente:</label>
+    <input type="text" id="n_cliente" name="n_cliente" required>
+  
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+  
+    <label for="direccion">Dirección:</label>
+    <input type="text" id="direccion" name="direccion" required>
+  
+    <label for="correo">Correo Electrónico:</label>
+    <input type="text" id="correo" name="correo" required>
+  
+    <label for="telefono">Teléfono:</label>
+    <input type="text" id="telefono" name="telefono" required>
+  
+    <label for="tipo">Tipo:</label>
+    <select id="tipo" name="tipo" required>
+      <option value="">Seleccionar</option>
+      <option value="fisica">Física</option>
+      <option value="moral">Moral</option>
+    </select>
+  
+ <label for="fecha">Fecha de la Cita:</label>
+    <input type="date" id="fecha" name="fecha" required>
+  
+  
+    <label for="descripcion">Descripción de la Cita:</label>
+    <textarea id="descripcion" name="descripcion" required></textarea>
+  
+    <label for="num_maquina">Número de la Máquina:</label>
+    <input type="text" id="num_maquina" name="num_maquina" required>
+  
+    <label for="marca">Marca:</label>
+    <input type="text" id="marca" name="marca" required>
+  
+    <label for="modelo">Modelo:</label>
+    <input type="text" id="modelo" name="modelo" required>
+  
+    <label for="anno">Año:</label>
+    <input type="text" id="anno" name="anno" required>
+  
+    <label for="num_serie">Número de Serie:</label>
+    <input type="text" id="num_serie" name="num_serie" required>
+  
+    <label for="cliente">Cliente:</label>
+    <input type="text" id="cliente" name="cliente" required>
+  
+    <div class="button-group">
+      <button onclick="saveForm(1)">Guardar</button>
+      <button onclick="cancelForm(1)">Cancelar</button>
+    </div>
+  </div>
+  
+  <script>
+    function showForm(id) {
+      var form = document.getElementById("form-" + id);
+      form.classList.add("show");
+    }
+  
+    function editForm(id) {
+      var form = document.getElementById("form-" + id);
+      form.classList.add("show");
+    }
+  
+    function cancelForm(id) {
+      var form = document.getElementById("form-" + id);
+      form.classList.remove("show");
+    }
+  
+    function saveForm(id) {
+      var form = document.getElementById("form-" + id);
+      form.classList.remove("show");
+    }
+  </script>
+</body>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+  
+    h1 {
+      text-align: center;
+    }
+  
+    .card {
+      background-color: #a2ebab;
+      padding: 20px;
+      margin-bottom: 20px;
+      border: 1px solid #000000;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  
+    .card h2 {
+      margin-top: 0;
+    }
+  
+    .card p {
+      margin: 0;
+    }
+  
+    .form-group {
+      display: none;
+      margin-bottom: 20px;
+    }
+  
+    .form-group.show {
+      display: block;
+    }
+  
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+  
+    .form-group input[type="text"],
+    .form-group textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+  
+    .button-group {
+      text-align: right;
+    }
+  
+    .button-group button {
+      margin-left: 5px;
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  
+    .button-group button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</html>

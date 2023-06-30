@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Citas</title>
+</head>
+<body>
+  <h1>Generar Cita</h1>
+  <form>
+    <label for="n_cliente">Número de Cliente:</label>
+    <input type="text" id="n_cliente" name="n_cliente" required>
+  
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+  
+    <label for="direccion">Dirección:</label>
+    <input type="text" id="direccion" name="direccion" required>
+  
+    <label for="correo">Correo Electrónico:</label>
+    <input type="email" id="correo" name="correo" required>
+  
+    <label for="telefono">Teléfono:</label>
+    <input type="text" id="telefono" name="telefono" required>
+  
+    <label for="tipo">Tipo:</label>
+    <select id="tipo" name="tipo" required>
+      <option value="">Seleccionar</option>
+      <option value="fisica">Física</option>
+      <option value="moral">Moral</option>
+    </select>
+  
+    <label for="fecha">Fecha de la Cita:</label>
+    <input type="date" id="fecha" name="fecha" required>
+  
+    <label for="descripcion">Descripción de la Cita:</label>
+    <textarea id="descripcion" name="descripcion" required></textarea>
+  <hr>
+    <label for="num_maquina">Número de la Máquina:</label>
+    <input type="text" id="num_maquina" name="num_maquina" required>
+  
+    <label for="marca">Marca:</label>
+    <input type="text" id="marca" name="marca" required>
+  
+    <label for="modelo">Modelo:</label>
+    <input type="text" id="modelo" name="modelo" required>
+  
+    <label for="ano">Año:</label>
+    <input type="text" id="ano" name="ano" required>
+  
+    <label for="num_serie">Número de Serie:</label>
+    <input type="text" id="num_serie" name="num_serie" required>
+  
+    <label for="cliente">Cliente:</label>
+    <input type="text" id="cliente" name="cliente" required>
+  
+    <div class="button-group">
+      <button type="submit">Guardar</button>
+      <button type="button" onclick="history.back()">Regresar</button>
+      <button type="button" onclick="window.location.href='cancelar.html'">Cancelar</button>
+    </div>
+  </form>
+</body>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+  
+    h1 {
+      text-align: center;
+    }
+  
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+  
+    textarea {
+      height: 100px;
+    }
+  
+    .button-group {
+      text-align: right;
+    }
+  
+    .button-group button {
+      margin-left: 5px;
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  
+    .button-group button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</html>
